@@ -1,4 +1,4 @@
-package com.company;
+package ru.sbt;
 
 /**
  * Created by Sania on 18.09.2016.

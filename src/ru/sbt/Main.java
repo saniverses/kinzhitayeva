@@ -1,4 +1,4 @@
-package com.company;
+package ru.sbt;
 
 public class Main {
 
