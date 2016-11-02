@@ -8,21 +8,18 @@ import java.util.Map;
  */
 public class CountMapImpl<T> implements CountMap<T> {
     private static final int DEFAULT_CAPACITY = 10;
-    private int capacity;
     private int size;
     private Map<T, Integer> container;
 
 
     @SuppressWarnings("unchecked")
     public CountMapImpl(int size) {
-        this.capacity = size;
         this.container = new HashMap<>(size);
         this.size = container.size();
     }
 
     @SuppressWarnings("unchecked")
     public CountMapImpl() {
-        this.capacity = DEFAULT_CAPACITY;
         this.container = new HashMap<>(DEFAULT_CAPACITY);
         this.size = container.size();
     }
@@ -98,13 +95,6 @@ public class CountMapImpl<T> implements CountMap<T> {
         map.add(6);
         map.add(5);
         map.add(10);
-        map.add(10);
-        map.add(10);
-        map.add(5);
-        map.add(6);
-        map.add(5);
-
-        map.remove(10);
 
         int count = map.getCount(5); // 2
         System.out.println(count);
