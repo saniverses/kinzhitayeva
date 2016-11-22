@@ -73,10 +73,10 @@ public class CollectionUtils<T> {
                 }
                 return result;
             } catch (ClassCastException e) {
-                return null;
+                return result;
             }
         } catch (ClassCastException e) {
-            return null;
+            return result;
         }
     }
 
@@ -100,10 +100,10 @@ public class CollectionUtils<T> {
                 }
                 return result;
             } catch (ClassCastException e) {
-                return null;
+                return result;
             }
         } catch (ClassCastException e) {
-            return null;
+            return result;
         }
     }
 }
