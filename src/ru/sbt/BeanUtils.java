@@ -4,9 +4,6 @@ package ru.sbt;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/**
- * Created by Sania on 18.11.2016.
- */
 public class BeanUtils {
     /**
      * Scans object "from" for all getters. If object "to"
